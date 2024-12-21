@@ -1,9 +1,10 @@
 import React from "react";
 import image from "../Images/Jahanvi.jpg";
+// import Resume from "../public/Resume/JahanvisoniResume.pdf";
 
 const handleDownloadCV = () => {
   const link = document.createElement("a");
-  link.href = "/JahanvisoniResume.pdf";
+  link.href = "/Resume/JahanvisoniResume.pdf";
   link.download = "JahanvisoniResume.pdf";
   link.click();
 };
