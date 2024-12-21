@@ -9,25 +9,20 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    // <div className="p-8 bg-[#171d32] text-white min-h-screen flex items-center justify-center">
-    <div className="p-6 bg-[#a7b3df] rounded-md  shadow-lg w-full  mx-auto text-center">
-      <h1 className="text-3xl font-extrabold mb-6 border-b-2 border-white pb-2">
-        Contact Me <FontAwesomeIcon icon={faSmile} size="x" className="ml-2" />{" "}
+    <div className="p-6 bg-[#a7b3df] rounded-md shadow-lg w-full max-w-4xl mx-auto text-center">
+      <h1 className="text-2xl md:text-3xl font-extrabold mb-6 border-b-2 border-white pb-2">
+        Contact Me <FontAwesomeIcon icon={faSmile} size="sm" className="ml-2" />
         !
       </h1>
-      <p className="text-xl font-semibold mb-6">
+      <p className="text-lg md:text-xl font-semibold mb-6">
         Feel free to reach out for collaborations, opportunities, or just to say
         hello!
       </p>
-      <div className="place-items-center space-y-4">
-        <div className="flex items-center">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            size="lg"
-            className="text-white mr-4"
-          />
-          <span className="material-icons text-white mr-4 text-xl">email</span>
 
+      <div className="space-y-6">
+        {/* Email */}
+        <div className="flex items-center justify-center space-x-4">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" className="text-white" />
           <p className="text-lg">
             <a
               href="mailto:jahanvisoni72@gmail.com"
@@ -39,13 +34,8 @@ const Contact = () => {
         </div>
 
         {/* Phone */}
-        <div className="flex items-center">
-          <FontAwesomeIcon
-            icon={faPhone}
-            size="lg"
-            className="text-white mr-4"
-          />
-          <span className="material-icons text-white mr-4 text-xl">phone</span>
+        <div className="flex items-center justify-center space-x-4">
+          <FontAwesomeIcon icon={faPhone} size="lg" className="text-white" />
           <p className="text-lg">
             <a
               href="tel:+919522252147"
@@ -57,13 +47,8 @@ const Contact = () => {
         </div>
 
         {/* LinkedIn */}
-        <div className="flex items-center">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            size="lg"
-            className="text-white mr-4"
-          />
-          <span className="material-icons text-white mr-4 text-xl">link</span>
+        <div className="flex items-center justify-center space-x-4">
+          <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-white" />
           <p className="text-lg">
             <a
               href="https://www.linkedin.com/in/jahanvi-soni-4135a9216"
@@ -77,7 +62,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

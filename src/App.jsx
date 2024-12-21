@@ -23,11 +23,11 @@ function App() {
         <Project />
       </div>
 
-      <div className="p-8 bg-[#1d263b]" id="experience">
+      <div className="p-8 bg-[#171d32]" id="experience">
         <Experience />
       </div>
 
-      <div className="p-8 bg-[#1d263b]" id="contact">
+      <div className="p-8 bg-[#171d32]" id="contact">
         <Contact />
       </div>
     </div>
