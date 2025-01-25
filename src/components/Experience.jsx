@@ -1,72 +1,98 @@
 import React from "react";
-import { RiCodeSSlashLine, RiComputerLine } from "@remixicon/react";
+import Blog1 from "../assets/images/wordpress5.jpg";
+import Blog2 from "../assets/images/wordpress6.jpg";
+import Blog3 from "../assets/images/wordpress7.jpg";
+import MainImage from "../assets/images/wordpressimage3.jpg";
 
 const Experience = () => {
   return (
-    <div
-      id="experience"
-      className="p-6 md:p-8 bg-[#a7b3df] text-white rounded-sm shadow-lg w-full max-w-5xl mx-auto mt-8"
-    >
-      <h1 className="text-2xl md:text-3xl font-extrabold mb-6 border-b-2 border-white pb-2 text-center md:text-left">
-        Experience
-      </h1>
-
-      <div className="flex flex-col md:flex-row justify-center gap-6 p-4">
-        {/* Frontend Development Intern */}
-        <div className="bg-[#6878b4] p-10 rounded-br-[100px] shadow-md shadow-white flex-1">
-          <div className="place-items-center text-center mb-4">
-            <RiCodeSSlashLine size={40} className="text-white mx-auto" />
-            <h2 className="text-xl md:text-2xl font-bold text-white mt-2">
-              Frontend Development Intern
-            </h2>
-            <p className="italic text-sm md:text-base text-white mb-3">
-              Codensious - Indore, India
-            </p>
-          </div>
-          <ul className="list-disc ml-5 text-lg md:text-xl text-white space-y-2">
-            <li>
-              <p>
-                Developed and maintained responsive user interfaces using
-                ReactJS and Tailwind CSS.
-              </p>
-            </li>
-            <li>
-              <p>
-                Collaborated with the design team to implement pixel-perfect UI
-                components.
-              </p>
-            </li>
-          </ul>
+    <>
+      <div className="flex justify-center mt-5">
+        <div className="ml-10 mt-20">
+          <h1 className="text-2xl text-start font-serif font-semibold">
+            The experience can be the difference
+          </h1>
+          <h6 className="text-xl font-serif mt-10 mr-5">
+            What story do clients tell about your service? And will that story
+            help you grow?
+          </h6>
         </div>
 
-        {/* WordPress Development Intern */}
-        <div className="bg-[#6878b4] p-10 rounded-br-[100px] shadow-md shadow-white flex-1">
-          <div className="place-items-center text-center mb-4">
-            <RiComputerLine size={40} className="text-white mx-auto" />
-            <h2 className="text-xl md:text-2xl font-bold text-white mt-2">
-              WordPress Development Intern
-            </h2>
-            <p className="italic text-sm md:text-base text-white mb-3">
-              Musk Owl - Udaipur, India
-            </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 px-5 sm:px-16 lg:px-0 ml-20">
+          <div className="border shadow-xl">
+            <div className="p-5">
+              <img
+                src={Blog1}
+                alt="Left Illustration"
+                className="w-full h-60 object-cover"
+              />
+            </div>
+            <div className="p-5">
+              <div className="flex justify-between items-center">
+                <p className="text-xl ml-2 text-blue-500 mt-4">
+                  Delight your clients
+                </p>
+              </div>
+              <div className="mt-2">
+                <p className="text-lg mt-5 ml-2">
+                  Don’t leave the experience to chance. Measure and track
+                  loyalty and satisfaction and identify where improvements are
+                  needed.
+                </p>
+              </div>
+            </div>
           </div>
-          <ul className="list-disc ml-5 text-lg md:text-xl text-white space-y-2">
-            <li>
-              <p>
-                Designed and customized WordPress themes to meet client
-                requirements.
-              </p>
-            </li>
-            <li>
-              <p>
-                Integrated plugins to enhance website functionality and improve
-                user experience.
-              </p>
-            </li>
-          </ul>
+
+          <div className="border shadow-xl">
+            <div className="p-5">
+              <img
+                src={Blog2}
+                alt="Left Illustration"
+                className="w-full h-60 object-cover"
+              />
+            </div>
+            <div className="p-5">
+              <div className="flex justify-between items-center">
+                <p className="text-xl ml-2 text-blue-500 mt-4">
+                  Engage your people
+                </p>
+              </div>
+              <div className="mt-2 ml-2">
+                <p className="text-lg mt-5">
+                  Motivate staff to deliver great client experiences. Reward
+                  those that invest in the relationship.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border shadow-xl">
+            <div className="p-5">
+              <img
+                src={Blog3}
+                alt="Left Illustration"
+                className="w-full h-60 object-cover"
+              />
+            </div>
+            <div className="p-5">
+              <div className="flex justify-between items-center">
+                <p className="text-xl ml-2 text-blue-500 mt-4">
+                  Grow your firm
+                </p>
+              </div>
+              <div className="mt-2">
+                <p className="text-lg mt-5 ml-2">
+                  Use experience insights to take early action to retain clients
+                  and grow referals by up to 35%.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="mt-20 ml-5 mr-5">
+        <img src={MainImage} alt="Main" className="h-full w-full" />
+      </div>
+    </>
   );
 };
 

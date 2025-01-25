@@ -1,35 +1,22 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Project from "./components/Project";
+import Herosection from "./components/Herosection";
 import Experience from "./components/Experience";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-[#171d32] text-white min-h-screen w-full">
-      {/* Navbar */}
+    <div className="">
       <Navbar />
-
-      <div className="bg-[#171d32]" id="Home">
-        <Home />
-      </div>
-      {/* Sections */}
-      <div className="p-8 bg-[#171d32]" id="about">
-        <About />
-      </div>
-      <div className="p-8 bg-[#171d32]" id="projects">
-        <Project />
-      </div>
-
-      <div className="p-8 bg-[#171d32]" id="experience">
-        <Experience />
-      </div>
-
-      <div className="p-8 bg-[#171d32]" id="contact">
-        <Contact />
-      </div>
+      <Herosection />
+      <Experience />
+      <Section1 />
+      <Section2 />
+      <Form />
+      <Footer />
     </div>
   );
 }
